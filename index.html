@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Descomplica Web: guia interativo para aprender acessibilidade web."
+  >
+
+  <title>Descomplica Web | Acessibilidade Interativa</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Link para usuários que navegam pelo teclado -->
+  <a href="#conteudo" class="pular-conteudo">
+    Pular para o conteúdo
+  </a>
+
+
+  <!-- CABEÇALHO -->
+  <header class="cabecalho">
+
+    <div class="container cabecalho-conteudo">
+
+      <a href="#inicio" class="logo">
+        🌐 Descomplica Web
+      </a>
+
+      <nav aria-label="Menu principal">
+
+        <ul class="menu">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#aprender">Aprender</a></li>
+          <li><a href="#praticar">Praticar</a></li>
+          <li><a href="#videos">Videoaulas</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+        </ul>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main id="conteudo">
+
+    <!-- APRESENTAÇÃO -->
+    <section id="inicio" class="hero">
+
+      <div class="container hero-conteudo">
+
+        <div class="hero-texto">
+
+          <span class="etiqueta">
+            Acessibilidade sem complicação
+          </span>
+
+          <h1>
+            Aprenda a criar uma web para todos.
+          </h1>
+
+          <p>
+            Descubra como pequenas mudanças no design e no código
+            podem tornar páginas mais fáceis de usar por todas as pessoas.
+          </p>
+
+          <a href="#aprender" class="botao">
+            Começar a aprender
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- INTRODUÇÃO -->
+    <section class="secao">
+
+      <div class="container">
+
+        <h2>O que é acessibilidade web?</h2>
+
+        <p class="texto-destaque">
+          Acessibilidade web significa criar sites que possam ser
+          utilizados por diferentes pessoas, independentemente de suas
+          limitações, dispositivos ou formas de interação.
+        </p>
+
+        <div class="cards">
+
+          <article class="card">
+            <span class="icone" aria-hidden="true">👁️</span>
+
+            <h3>Deficiência visual</h3>
+
+            <p>
+              Contraste, textos alternativos e leitores de tela ajudam
+              pessoas com baixa visão ou deficiência visual.
+            </p>
+          </article>
+
+          <article class="card">
+            <span class="icone" aria-hidden="true">🎨</span>
+
+            <h3>Daltonismo</h3>
+
+            <p>
+              Informações importantes não devem depender somente
+              das cores para serem compreendidas.
+            </p>
+          </article>
+
+          <article class="card">
+            <span class="icone" aria-hidden="true">📖</span>
+
+            <h3>Dislexia</h3>
+
+            <p>
+              Fontes legíveis, espaçamento adequado e textos organizados
+              ajudam a tornar a leitura mais confortável.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- TRILHA -->
+    <section id="aprender" class="secao fundo-claro">
+
+      <div class="container">
+
+        <span class="etiqueta">Trilha de aprendizado</span>
+
+        <h2>Por onde começar?</h2>
+
+        <p>
+          Aprenda acessibilidade através de duas áreas que trabalham juntas.
+        </p>
+
+
+        <div class="trilha">
+
+          <article class="modulo">
+
+            <span class="numero-modulo">
+              01
+            </span>
+
+            <h3>Design acessível</h3>
+
+            <p>
+              Aprenda sobre contraste, cores, fontes, espaçamento,
+              organização visual e experiência do usuário.
+            </p>
+
+            <a href="paginas/design.html" class="link-modulo">
+              Aprender Design →
+            </a>
+
+          </article>
+
+
+          <article class="modulo">
+
+            <span class="numero-modulo">
+              02
+            </span>
+
+            <h3>Código acessível</h3>
+
+            <p>
+              Descubra como HTML semântico, textos alternativos,
+              formulários e navegação por teclado tornam páginas
+              mais acessíveis.
+            </p>
+
+            <a href="paginas/codigo.html" class="link-modulo">
+              Aprender Código →
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- EXEMPLO INTERATIVO -->
+    <section id="praticar" class="secao">
+
+      <div class="container">
+
+        <span class="etiqueta">
+          Aprenda na prática
+        </span>
+
+        <h2>Você consegue encontrar o problema?</h2>
+
+        <p>
+          Compare duas formas diferentes de criar o mesmo elemento.
+        </p>
+
+
+        <div class="comparacao">
+
+          <article class="exemplo ruim">
+
+            <h3>❌ Não recomendado</h3>
+
+            <pre><code>&lt;div onclick="enviar()"&gt;
+  Enviar
+&lt;/div&gt;</code></pre>
+
+            <p>
+              Uma div não comunica ao navegador que aquele elemento
+              funciona como um botão.
+            </p>
+
+          </article>
+
+
+          <article class="exemplo bom">
+
+            <h3>✅ Recomendado</h3>
+
+            <pre><code>&lt;button type="button"&gt;
+  Enviar
+&lt;/button&gt;</code></pre>
+
+            <p>
+              O botão possui significado semântico e pode ser utilizado
+              mais facilmente com teclado e tecnologias assistivas.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- MINI DESAFIO -->
+    <section class="secao desafio">
+
+      <div class="container">
+
+        <span class="etiqueta">
+          Desafio rápido
+        </span>
+
+        <h2>Qual opção é mais acessível?</h2>
+
+        <p>
+          Qual alternativa deve ser usada para uma imagem importante?
+        </p>
+
+
+        <div class="alternativas">
+
+          <button type="button">
+            &lt;img src="grafico.png"&gt;
+          </button>
+
+          <button type="button">
+            &lt;img src="grafico.png"
+            alt="Gráfico de crescimento das vendas"&gt;
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- VÍDEOS -->
+    <section id="videos" class="secao fundo-claro">
+
+      <div class="container">
+
+        <span class="etiqueta">
+          Videoaulas
+        </span>
+
+        <h2>Pílulas de conhecimento</h2>
+
+        <p>
+          Vídeos curtos para aprender conceitos importantes
+          de acessibilidade.
+        </p>
+
+
+        <div class="cards">
+
+          <article class="card">
+            <h3>Contraste de cores</h3>
+
+            <p>
+              Entenda por que o contraste influencia a leitura.
+            </p>
+
+            <button type="button">
+              Assistir aula
+            </button>
+          </article>
+
+
+          <article class="card">
+            <h3>HTML semântico</h3>
+
+            <p>
+              Veja como utilizar as tags corretas no HTML.
+            </p>
+
+            <button type="button">
+              Assistir aula
+            </button>
+          </article>
+
+
+          <article class="card">
+            <h3>Texto alternativo</h3>
+
+            <p>
+              Aprenda como descrever imagens corretamente.
+            </p>
+
+            <button type="button">
+              Assistir aula
+            </button>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SOBRE -->
+    <section id="sobre" class="secao">
+
+      <div class="container">
+
+        <h2>Sobre o Descomplica Web</h2>
+
+        <p>
+          O Descomplica Web é um Recurso Educacional Aberto desenvolvido
+          para apresentar conceitos de acessibilidade web de maneira
+          simples, prática e interativa.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+
+    <div class="container">
+
+      <p>
+        Descomplica Web — Projeto de Extensão
+      </p>
+
+      <p>
+        Desenvolvido com HTML, CSS e JavaScript.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
