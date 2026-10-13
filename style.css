@@ -67,7 +67,7 @@ body {
     color: white;
     padding: 20px 20px 10px 20px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header-topo-acoes {
@@ -137,7 +137,7 @@ body {
 .nav-btn.ativo {
     background-color: var(--bg-card);
     color: var(--texto-principal);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Área de Conteúdo Principal */
@@ -158,21 +158,32 @@ body {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(5px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Cartões e Estilos Gerais */
-.card-intro, .desafio {
+.card-intro,
+.desafio {
     background-color: var(--bg-card);
     border-radius: 12px;
     padding: 30px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     border: 1px solid var(--borda-card);
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.card-intro h2, .desafio h2, .card-intro h3, .desafio h3 {
+.card-intro h2,
+.desafio h2,
+.card-intro h3,
+.desafio h3 {
     color: var(--texto-principal);
     margin-bottom: 15px;
 }
@@ -292,6 +303,16 @@ body {
     padding: 12px;
     border-radius: 0 6px 6px 0;
     margin-top: 10px;
+}
+
+/* Estilo para a caixa de aviso que usa apenas cor (Inacessível) */
+.mensagem-apenas-cor {
+    background-color: var(--bg-erro);
+    color: #E53E3E;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-weight: 500;
 }
 
 /* Códigos */

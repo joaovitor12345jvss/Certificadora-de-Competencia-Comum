@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body data-tema="claro">
 
     <!-- Header Moderno -->
@@ -14,7 +16,8 @@
         <div class="header-topo-acoes">
             <span class="logo-texto">Descomplica Web 🌐</span>
             <!-- Botão de Alternância de Tema -->
-            <button id="btn-tema" class="btn-tema" onclick="alternarTema()" aria-label="Alternar entre modo claro e escuro">
+            <button id="btn-tema" class="btn-tema" onclick="alternarTema()"
+                aria-label="Alternar entre modo claro e escuro">
                 🌙 Modo Escuro
             </button>
         </div>
@@ -37,8 +40,11 @@
         <section id="inicio" class="secao-spa ativa">
             <div class="card-intro">
                 <h2>Bem-vindo ao Guia de Acessibilidade Web</h2>
-                <p>A internet deve ser um espaço onde todas as pessoas possam navegar, aprender e interagir sem barreiras. Este projeto ensina os fundamentos de Acessibilidade Web unindo <strong>Design (IHC)</strong> e <strong>Código (Front End)</strong>.</p>
-                <p>O conteúdo foi planeado para ter uma abordagem lúdica, simplificada e sem jargões complexos, ideal para iniciantes.</p>
+                <p>A internet deve ser um espaço onde todas as pessoas possam navegar, aprender e interagir sem
+                    barreiras. Este projeto ensina os fundamentos de Acessibilidade Web unindo <strong>Design
+                        (IHC)</strong> e <strong>Código (Front End)</strong>.</p>
+                <p>O conteúdo foi planeado para ter uma abordagem lúdica, simplificada e sem jargões complexos, ideal
+                    para iniciantes.</p>
                 <div class="destaque-info">
                     <h3>💡 O que vai aprender aqui?</h3>
                     <ul>
@@ -56,12 +62,14 @@
         <section id="botoes" class="secao-spa">
             <div class="desafio">
                 <h2> Prática de Código: O Desafio do Botão</h2>
-                <p>Para quem usa um leitor de tela, a forma como construímos um botão no código faz toda a diferença.</p>
-                
+                <p>Para quem usa um leitor de tela, a forma como construímos um botão no código faz toda a diferença.
+                </p>
+
                 <div class="comparacao-grid">
                     <div class="caixa-exemplo erro">
                         <h3>❌ O jeito Inacessível</h3>
-                        <p>Parece um botão visualmente, mas o computador não sabe que é. Quem usa o teclado não consegue interagir.</p>
+                        <p>Parece um botão visualmente, mas o computador não sabe que é. Quem usa o teclado não consegue
+                            interagir.</p>
                         <div class="botao-inacessivel" onclick="alert('Clicou no botão falso!')">Clique Aqui</div>
                         <pre><code>&lt;div class="botao"&gt;Clique Aqui&lt;/div&gt;</code></pre>
                     </div>
@@ -80,19 +88,22 @@
         <section id="imagens" class="secao-spa">
             <div class="desafio">
                 <h2> Prática de Código: O Desafio do Texto Alternativo</h2>
-                <p>As imagens precisam de descrições em texto para utilizadores com deficiência visual. Sem o atributo <code>alt</code>, o leitor lê apenas o nome técnico do ficheiro.</p>
+                <p>As imagens precisam de descrições em texto para utilizadores com deficiência visual. Sem o atributo
+                    <code>alt</code>, o leitor lê apenas o nome técnico do ficheiro.</p>
 
                 <div class="comparacao-grid">
                     <div class="caixa-exemplo erro">
                         <h3>❌ Sem Descrição</h3>
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300" alt="" width="180" class="imagem-exemplo">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300" alt="" width="180"
+                            class="imagem-exemplo">
                         <p><strong>Leitor lê:</strong> <em>"IMG_994.jpg"</em> (Inútil para cegos)</p>
                         <pre><code>&lt;img src="foto.jpg"&gt;</code></pre>
                     </div>
 
                     <div class="caixa-exemplo sucesso">
                         <h3>✅ Com Atributo <code>alt</code></h3>
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300" alt="Retrato de uma mulher jovem a sorrir ao ar livre." width="180" class="imagem-exemplo">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300"
+                            alt="Retrato de uma mulher jovem a sorrir ao ar livre." width="180" class="imagem-exemplo">
                         <p><strong>Leitor lê:</strong> <em>"Retrato de uma mulher jovem."</em></p>
                         <pre><code>&lt;img src="foto.jpg" alt="..."&gt;</code></pre>
                     </div>
@@ -107,18 +118,33 @@
                 <p>O contraste garante legibilidade para utilizadores com baixa visão ou sob luz solar intensa.</p>
 
                 <div class="caixa-mau-contraste">
-                    <p><strong>❌ Mau Contraste:</strong> Texto cinzento claro num fundo cinzento. Dificulta imenso a leitura.</p>
+                    <p><strong>❌ Mau Contraste:</strong> Texto cinzento claro num fundo de baixo contraste. Dificulta imensamente a
+                        leitura.</p>
                 </div>
                 <br>
                 <div class="caixa-bom-contraste">
-                    <p><strong>✅ Bom Contraste:</strong> Texto escuro num fundo claro. Leitura confortável e validada.</p>
+                    <p><strong>✅ Bom Contraste:</strong> Texto escuro num fundo claro(ou claro num fundo escuro). Leitura confortável e validada.
+                    </p>
                 </div>
 
                 <hr class="divisor">
 
-                <h3>Evitar depender apenas da cor em avisos:</h3>
-                <div class="mensagem-com-icone">
-                    <span aria-hidden="true">⚠️</span> <strong>Erro:</strong> A palavra-passe está incorreta. (Usa cor, ícone e texto claro para daltónicos).
+                <h3>2. Depender Apenas das Cores (Aviso de Erro/Sucesso)</h3>
+                <p>Se usar apenas a cor para transmitir uma mensagem (ex.: vermelho para erro, verde para sucesso), uma
+                    pessoa com daltonismo pode não perceber a diferença!</p>
+
+                <div class="caixa-exemplo" style="margin-top: 15px;">
+                    <h4>❌ Mau Exemplo (Inacessível):</h4>
+                    <div class="mensagem-apenas-cor">A sua palavra-passe está incorreta.</div>
+                    <small><em>Depende apenas da cor vermelha para avisar do erro.</em></small>
+                </div>
+
+                <div class="caixa-exemplo" style="margin-top: 15px;">
+                    <h4>✅ Bom Exemplo (Acessível):</h4>
+                    <div class="mensagem-com-icone">
+                        <span aria-hidden="true">⚠️</span> <strong>Erro:</strong> A sua palavra-passe está incorreta.
+                    </div>
+                    <small><em>Usa cor, ícone explicativo e texto claro ("Erro:").</em></small>
                 </div>
             </div>
         </section>
@@ -127,20 +153,25 @@
         <section id="tema" class="secao-spa">
             <div class="desafio">
                 <h2>🌓 Prática de IHC: A Importância do Modo Escuro</h2>
-                <p>O Modo Escuro não é apenas uma tendência estética; é uma ferramenta essencial de inclusão e ergonomia visual.</p>
-                
+                <p>O Modo Escuro não é apenas uma tendência estética; é uma ferramenta essencial de inclusão e ergonomia
+                    visual.</p>
+
                 <div class="destaque-info" style="margin-top: 15px;">
                     <h3>Porquê disponibilizar um Tema Escuro?</h3>
                     <ul style="margin-left: 20px; margin-top: 8px;">
-                        <li><strong>Sensibilidade à Luz (Fotofobia):</strong> Pessoas com certas condições neurológicas ou visuais sofrem forte desconforto com telas totalmente brancas e luminosas.</li>
-                        <li><strong>Redução da Fadiga Visual:</strong> Em ambientes com pouca luz (como à noite), fundos escuros reduzem o brilho excessivo direcionado aos olhos.</li>
-                        <li><strong>Autonomia do Utilizador:</strong> Permitir que cada pessoa escolha o formato que melhor se adapta à sua visão promove uma experiência verdadeiramente inclusiva.</li>
+                        <li><strong>Sensibilidade à Luz (Fotofobia):</strong> Pessoas com certas condições neurológicas
+                            ou visuais sofrem forte desconforto com telas totalmente brancas e luminosas.</li>
+                        <li><strong>Redução da Fadiga Visual:</strong> Em ambientes com pouca luz (como à noite), fundos
+                            escuros reduzem o brilho excessivo direcionado aos olhos.</li>
+                        <li><strong>Autonomia do Utilizador:</strong> Permitir que cada pessoa escolha o formato que
+                            melhor se adapta à sua visão promove uma experiência verdadeiramente inclusiva.</li>
                     </ul>
                 </div>
 
                 <div class="caixa-exemplo sucesso" style="margin-top: 20px;">
                     <h3>Teste já na prática!</h3>
-                    <p>Clique no botão <strong>"Modo Escuro"</strong> no topo da página para ver como a interface se adapta dinamicamente mantendo o contraste e a legibilidade em qualquer esquema de cores.</p>
+                    <p>Clique no botão <strong>"Modo Escuro"</strong> no topo da página para ver como a interface se
+                        adapta dinamicamente mantendo o contraste e a legibilidade em qualquer esquema de cores.</p>
                 </div>
             </div>
         </section>
@@ -150,4 +181,5 @@
     <!-- Ligação ao ficheiro JavaScript externo -->
     <script src="script.js" defer></script>
 </body>
+
 </html>
