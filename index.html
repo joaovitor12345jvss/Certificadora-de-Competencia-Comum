@@ -1,401 +1,153 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-PT">
 <head>
-  <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
-  <meta
-    name="description"
-    content="Descomplica Web: guia interativo para aprender acessibilidade web."
-  >
-
-  <title>Descomplica Web | Acessibilidade Interativa</title>
-
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descomplica Web: O Guia para a Acessibilidade Interativa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
-
-  <!-- Link para usuários que navegam pelo teclado -->
-  <a href="#conteudo" class="pular-conteudo">
-    Pular para o conteúdo
-  </a>
-
-
-  <!-- CABEÇALHO -->
-  <header class="cabecalho">
-
-    <div class="container cabecalho-conteudo">
-
-      <a href="#inicio" class="logo">
-        🌐 Descomplica Web
-      </a>
-
-      <nav aria-label="Menu principal">
-
-        <ul class="menu">
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#aprender">Aprender</a></li>
-          <li><a href="#praticar">Praticar</a></li>
-          <li><a href="#videos">Videoaulas</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-        </ul>
-
-      </nav>
-
-    </div>
-
-  </header>
-
-
-  <main id="conteudo">
-
-    <!-- APRESENTAÇÃO -->
-    <section id="inicio" class="hero">
-
-      <div class="container hero-conteudo">
-
-        <div class="hero-texto">
-
-          <span class="etiqueta">
-            Acessibilidade sem complicação
-          </span>
-
-          <h1>
-            Aprenda a criar uma web para todos.
-          </h1>
-
-          <p>
-            Descubra como pequenas mudanças no design e no código
-            podem tornar páginas mais fáceis de usar por todas as pessoas.
-          </p>
-
-          <a href="#aprender" class="botao">
-            Começar a aprender
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- INTRODUÇÃO -->
-    <section class="secao">
-
-      <div class="container">
-
-        <h2>O que é acessibilidade web?</h2>
-
-        <p class="texto-destaque">
-          Acessibilidade web significa criar sites que possam ser
-          utilizados por diferentes pessoas, independentemente de suas
-          limitações, dispositivos ou formas de interação.
-        </p>
-
-        <div class="cards">
-
-          <article class="card">
-            <span class="icone" aria-hidden="true">👁️</span>
-
-            <h3>Deficiência visual</h3>
-
-            <p>
-              Contraste, textos alternativos e leitores de tela ajudam
-              pessoas com baixa visão ou deficiência visual.
-            </p>
-          </article>
-
-          <article class="card">
-            <span class="icone" aria-hidden="true">🎨</span>
-
-            <h3>Daltonismo</h3>
-
-            <p>
-              Informações importantes não devem depender somente
-              das cores para serem compreendidas.
-            </p>
-          </article>
-
-          <article class="card">
-            <span class="icone" aria-hidden="true">📖</span>
-
-            <h3>Dislexia</h3>
-
-            <p>
-              Fontes legíveis, espaçamento adequado e textos organizados
-              ajudam a tornar a leitura mais confortável.
-            </p>
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- TRILHA -->
-    <section id="aprender" class="secao fundo-claro">
-
-      <div class="container">
-
-        <span class="etiqueta">Trilha de aprendizado</span>
-
-        <h2>Por onde começar?</h2>
-
-        <p>
-          Aprenda acessibilidade através de duas áreas que trabalham juntas.
-        </p>
-
-
-        <div class="trilha">
-
-          <article class="modulo">
-
-            <span class="numero-modulo">
-              01
-            </span>
-
-            <h3>Design acessível</h3>
-
-            <p>
-              Aprenda sobre contraste, cores, fontes, espaçamento,
-              organização visual e experiência do usuário.
-            </p>
-
-            <a href="paginas/design.html" class="link-modulo">
-              Aprender Design →
-            </a>
-
-          </article>
-
-
-          <article class="modulo">
-
-            <span class="numero-modulo">
-              02
-            </span>
-
-            <h3>Código acessível</h3>
-
-            <p>
-              Descubra como HTML semântico, textos alternativos,
-              formulários e navegação por teclado tornam páginas
-              mais acessíveis.
-            </p>
-
-            <a href="paginas/codigo.html" class="link-modulo">
-              Aprender Código →
-            </a>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- EXEMPLO INTERATIVO -->
-    <section id="praticar" class="secao">
-
-      <div class="container">
-
-        <span class="etiqueta">
-          Aprenda na prática
-        </span>
-
-        <h2>Você consegue encontrar o problema?</h2>
-
-        <p>
-          Compare duas formas diferentes de criar o mesmo elemento.
-        </p>
-
-
-        <div class="comparacao">
-
-          <article class="exemplo ruim">
-
-            <h3>❌ Não recomendado</h3>
-
-            <pre><code>&lt;div onclick="enviar()"&gt;
-  Enviar
-&lt;/div&gt;</code></pre>
-
-            <p>
-              Uma div não comunica ao navegador que aquele elemento
-              funciona como um botão.
-            </p>
-
-          </article>
-
-
-          <article class="exemplo bom">
-
-            <h3>✅ Recomendado</h3>
-
-            <pre><code>&lt;button type="button"&gt;
-  Enviar
-&lt;/button&gt;</code></pre>
-
-            <p>
-              O botão possui significado semântico e pode ser utilizado
-              mais facilmente com teclado e tecnologias assistivas.
-            </p>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- MINI DESAFIO -->
-    <section class="secao desafio">
-
-      <div class="container">
-
-        <span class="etiqueta">
-          Desafio rápido
-        </span>
-
-        <h2>Qual opção é mais acessível?</h2>
-
-        <p>
-          Qual alternativa deve ser usada para uma imagem importante?
-        </p>
-
-
-        <div class="alternativas">
-
-          <button type="button">
-            &lt;img src="grafico.png"&gt;
-          </button>
-
-          <button type="button">
-            &lt;img src="grafico.png"
-            alt="Gráfico de crescimento das vendas"&gt;
-          </button>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- VÍDEOS -->
-    <section id="videos" class="secao fundo-claro">
-
-      <div class="container">
-
-        <span class="etiqueta">
-          Videoaulas
-        </span>
-
-        <h2>Pílulas de conhecimento</h2>
-
-        <p>
-          Vídeos curtos para aprender conceitos importantes
-          de acessibilidade.
-        </p>
-
-
-        <div class="cards">
-
-          <article class="card">
-            <h3>Contraste de cores</h3>
-
-            <p>
-              Entenda por que o contraste influencia a leitura.
-            </p>
-
-            <button type="button">
-              Assistir aula
+<body data-tema="claro">
+
+    <!-- Header Moderno -->
+    <header class="header-principal">
+        <div class="header-topo-acoes">
+            <span class="logo-texto">Descomplica Web 🌐</span>
+            <!-- Botão de Alternância de Tema -->
+            <button id="btn-tema" class="btn-tema" onclick="alternarTema()" aria-label="Alternar entre modo claro e escuro">
+                🌙 Modo Escuro
             </button>
-          </article>
-
-
-          <article class="card">
-            <h3>HTML semântico</h3>
-
-            <p>
-              Veja como utilizar as tags corretas no HTML.
-            </p>
-
-            <button type="button">
-              Assistir aula
-            </button>
-          </article>
-
-
-          <article class="card">
-            <h3>Texto alternativo</h3>
-
-            <p>
-              Aprenda como descrever imagens corretamente.
-            </p>
-
-            <button type="button">
-              Assistir aula
-            </button>
-          </article>
-
         </div>
+        <div class="header-container">
+            <h1>O Guia Interativo para uma Internet Inclusiva e Sem Barreiras</h1>
+        </div>
+        <!-- Menu de Navegação SPA (Abas) -->
+        <nav class="nav-spa">
+            <button class="nav-btn ativo" onclick="mudarSeccao('inicio', event)"> Início</button>
+            <button class="nav-btn" onclick="mudarSeccao('botoes', event)"> Botões e Código</button>
+            <button class="nav-btn" onclick="mudarSeccao('imagens', event)"> Textos Alternativos</button>
+            <button class="nav-btn" onclick="mudarSeccao('contraste', event)"> Contraste e Cores</button>
+            <button class="nav-btn" onclick="mudarSeccao('tema', event)"> Modo Escuro</button>
+        </nav>
+    </header>
 
-      </div>
+    <main class="conteudo-principal">
 
-    </section>
+        <!-- SECÇÃO 1: INÍCIO -->
+        <section id="inicio" class="secao-spa ativa">
+            <div class="card-intro">
+                <h2>Bem-vindo ao Guia de Acessibilidade Web</h2>
+                <p>A internet deve ser um espaço onde todas as pessoas possam navegar, aprender e interagir sem barreiras. Este projeto ensina os fundamentos de Acessibilidade Web unindo <strong>Design (IHC)</strong> e <strong>Código (Front End)</strong>.</p>
+                <p>O conteúdo foi planeado para ter uma abordagem lúdica, simplificada e sem jargões complexos, ideal para iniciantes.</p>
+                <div class="destaque-info">
+                    <h3>💡 O que vai aprender aqui?</h3>
+                    <ul>
+                        <li>Como estruturar código HTML de forma semântica para leitores de tela.</li>
+                        <li>A importância das descrições textuais (texto alternativo) em imagens.</li>
+                        <li>Como escolher cores com alto contraste e acessíveis a daltónicos.</li>
+                        <li>A importância do Modo Escuro para a saúde visual e conforto do utilizador.</li>
+                    </ul>
+                </div>
+                <button class="botao-acao-principal" onclick="mudarSeccaoParaBotao()">Começar a Praticar</button>
+            </div>
+        </section>
 
+        <!-- SECÇÃO 2: BOTÕES -->
+        <section id="botoes" class="secao-spa">
+            <div class="desafio">
+                <h2> Prática de Código: O Desafio do Botão</h2>
+                <p>Para quem usa um leitor de tela, a forma como construímos um botão no código faz toda a diferença.</p>
+                
+                <div class="comparacao-grid">
+                    <div class="caixa-exemplo erro">
+                        <h3>❌ O jeito Inacessível</h3>
+                        <p>Parece um botão visualmente, mas o computador não sabe que é. Quem usa o teclado não consegue interagir.</p>
+                        <div class="botao-inacessivel" onclick="alert('Clicou no botão falso!')">Clique Aqui</div>
+                        <pre><code>&lt;div class="botao"&gt;Clique Aqui&lt;/div&gt;</code></pre>
+                    </div>
 
-    <!-- SOBRE -->
-    <section id="sobre" class="secao">
+                    <div class="caixa-exemplo sucesso">
+                        <h3>✅ O jeito Acessível</h3>
+                        <p>Usa a tag semântica correta. O leitor avisa "Botão" e ativa-se com a tecla 'Enter'.</p>
+                        <button class="botao-acessivel" onclick="alert('Botão acessível ativado!')">Confirmar</button>
+                        <pre><code>&lt;button&gt;Confirmar&lt;/button&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <div class="container">
+        <!-- SECÇÃO 3: IMAGENS -->
+        <section id="imagens" class="secao-spa">
+            <div class="desafio">
+                <h2> Prática de Código: O Desafio do Texto Alternativo</h2>
+                <p>As imagens precisam de descrições em texto para utilizadores com deficiência visual. Sem o atributo <code>alt</code>, o leitor lê apenas o nome técnico do ficheiro.</p>
 
-        <h2>Sobre o Descomplica Web</h2>
+                <div class="comparacao-grid">
+                    <div class="caixa-exemplo erro">
+                        <h3>❌ Sem Descrição</h3>
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300" alt="" width="180" class="imagem-exemplo">
+                        <p><strong>Leitor lê:</strong> <em>"IMG_994.jpg"</em> (Inútil para cegos)</p>
+                        <pre><code>&lt;img src="foto.jpg"&gt;</code></pre>
+                    </div>
 
-        <p>
-          O Descomplica Web é um Recurso Educacional Aberto desenvolvido
-          para apresentar conceitos de acessibilidade web de maneira
-          simples, prática e interativa.
-        </p>
+                    <div class="caixa-exemplo sucesso">
+                        <h3>✅ Com Atributo <code>alt</code></h3>
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300" alt="Retrato de uma mulher jovem a sorrir ao ar livre." width="180" class="imagem-exemplo">
+                        <p><strong>Leitor lê:</strong> <em>"Retrato de uma mulher jovem."</em></p>
+                        <pre><code>&lt;img src="foto.jpg" alt="..."&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      </div>
+        <!-- SECÇÃO 4: CONTRASTE -->
+        <section id="contraste" class="secao-spa">
+            <div class="desafio">
+                <h2> Prática de Design (IHC): Contraste e Cores</h2>
+                <p>O contraste garante legibilidade para utilizadores com baixa visão ou sob luz solar intensa.</p>
 
-    </section>
+                <div class="caixa-mau-contraste">
+                    <p><strong>❌ Mau Contraste:</strong> Texto cinzento claro num fundo cinzento. Dificulta imenso a leitura.</p>
+                </div>
+                <br>
+                <div class="caixa-bom-contraste">
+                    <p><strong>✅ Bom Contraste:</strong> Texto escuro num fundo claro. Leitura confortável e validada.</p>
+                </div>
 
-  </main>
+                <hr class="divisor">
 
+                <h3>Evitar depender apenas da cor em avisos:</h3>
+                <div class="mensagem-com-icone">
+                    <span aria-hidden="true">⚠️</span> <strong>Erro:</strong> A palavra-passe está incorreta. (Usa cor, ícone e texto claro para daltónicos).
+                </div>
+            </div>
+        </section>
 
-  <!-- RODAPÉ -->
-  <footer class="rodape">
+        <!-- SECÇÃO 5: MODO ESCURO -->
+        <section id="tema" class="secao-spa">
+            <div class="desafio">
+                <h2>🌓 Prática de IHC: A Importância do Modo Escuro</h2>
+                <p>O Modo Escuro não é apenas uma tendência estética; é uma ferramenta essencial de inclusão e ergonomia visual.</p>
+                
+                <div class="destaque-info" style="margin-top: 15px;">
+                    <h3>Porquê disponibilizar um Tema Escuro?</h3>
+                    <ul style="margin-left: 20px; margin-top: 8px;">
+                        <li><strong>Sensibilidade à Luz (Fotofobia):</strong> Pessoas com certas condições neurológicas ou visuais sofrem forte desconforto com telas totalmente brancas e luminosas.</li>
+                        <li><strong>Redução da Fadiga Visual:</strong> Em ambientes com pouca luz (como à noite), fundos escuros reduzem o brilho excessivo direcionado aos olhos.</li>
+                        <li><strong>Autonomia do Utilizador:</strong> Permitir que cada pessoa escolha o formato que melhor se adapta à sua visão promove uma experiência verdadeiramente inclusiva.</li>
+                    </ul>
+                </div>
 
-    <div class="container">
+                <div class="caixa-exemplo sucesso" style="margin-top: 20px;">
+                    <h3>Teste já na prática!</h3>
+                    <p>Clique no botão <strong>"Modo Escuro"</strong> no topo da página para ver como a interface se adapta dinamicamente mantendo o contraste e a legibilidade em qualquer esquema de cores.</p>
+                </div>
+            </div>
+        </section>
 
-      <p>
-        Descomplica Web — Projeto de Extensão
-      </p>
+    </main>
 
-      <p>
-        Desenvolvido com HTML, CSS e JavaScript.
-      </p>
-
-    </div>
-
-  </footer>
-
-
-  <script src="js/script.js"></script>
-
+    <!-- Ligação ao ficheiro JavaScript externo -->
+    <script src="script.js" defer></script>
 </body>
 </html>
