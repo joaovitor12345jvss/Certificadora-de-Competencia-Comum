@@ -43,6 +43,8 @@
             <button class="nav-btn" onclick="mudarSeccao('imagens', event)"> Textos Alternativos</button>
             <button class="nav-btn" onclick="mudarSeccao('contraste', event)"> Contraste e Cores</button>
             <button class="nav-btn" onclick="mudarSeccao('tema', event)"> Modo Escuro</button>
+            <button class="nav-btn" onclick="mudarSeccao('lupa-sec', event)"> Lupa</button>
+            <button class="nav-btn" onclick="mudarSeccao('narrador-sec', event)"> Narrador</button>
         </nav>
     </header>
 
@@ -64,6 +66,7 @@
                         <li>A importância das descrições textuais (texto alternativo) em imagens.</li>
                         <li>Como escolher cores com alto contraste e acessíveis a daltónicos.</li>
                         <li>A importância do Modo Escuro para a saúde visual e conforto do utilizador.</li>
+                        <li>Recursos interativos de apoio para acessibilidade (Lupa e Narrador por API de Voz).</li>
                     </ul>
                 </div>
                 <button class="botao-acao-principal" onclick="mudarSeccaoParaBotao()">Começar a Praticar</button>
@@ -127,7 +130,7 @@
         <!-- SECÇÃO 4: CONTRASTE -->
         <section id="contraste" class="secao-spa">
             <div class="desafio">
-                <h2> Prática de Design (IHC): Contraste e Cores</h2>
+                <h2> Prática de IHC: Contraste e Cores</h2>
                 <p>O contraste garante legibilidade para utilizadores com baixa visão ou sob luz solar intensa.</p>
 
                 <div class="caixa-mau-contraste">
@@ -167,7 +170,7 @@
         <!-- SECÇÃO 5: MODO ESCURO -->
         <section id="tema" class="secao-spa">
             <div class="desafio">
-                <h2>🌓 Prática de IHC: A Importância do Modo Escuro</h2>
+                <h2> Prática de IHC: A Importância do Modo Escuro</h2>
                 <p>O Modo Escuro não é apenas uma tendência estética; é uma ferramenta essencial de inclusão e ergonomia
                     visual.</p>
 
@@ -191,12 +194,67 @@
             </div>
         </section>
 
+        <!-- SECÇÃO 6: LUPA DE AMPLIAÇÃO -->
+        <section id="lupa-sec" class="secao-spa">
+            <div class="desafio">
+                <h2> Prática de IHC: A Lupa de Ampliação de tela</h2>
+
+                <p>Utilizadores com baixa visão frequentemente necessitam de ampliar áreas específicas da tela sem
+                    desconfigurar o layout geral da página.</p>
+
+                <div class="destaque-info" style="margin-top: 15px;">
+                    <h3>Como a Lupa auxilia na acessibilidade?</h3>
+                    <ul style="margin-left: 20px; margin-top: 8px;">
+                        <li><strong>Foco Localizado:</strong> Permite aproximar detalhes textuais e visuais diretamente
+                            sob o cursor.</li>
+                        <li><strong>Inclusão Visual:</strong> Reduz a barreira para leitura de letras pequenas ou ícones
+                            detalhados.</li>
+                        <li><strong>Ergonomia Interativa:</strong> Funciona de forma fluida a acompanhar os movimentos
+                            sem exigir o zoom de todo o navegador.</li>
+                    </ul>
+                </div>
+
+                <div class="caixa-exemplo sucesso" style="margin-top: 20px;">
+                    <h3>Teste já na prática!</h3>
+                    <p>Clique no botão <strong>"Ativar Lupa"</strong> no topo da página e passe o cursor por cima dos
+                        elementos para ver a ampliação interativa em ação.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECÇÃO 7: NARRADOR DE TEXTO -->
+        <section id="narrador-sec" class="secao-spa">
+            <div class="desafio">
+                <h2> Prática de Front End: A API de Narração (Speech Synthesis)</h2>
+                <p>O uso de tecnologias de síntese de voz permite reproduzir o conteúdo textual do site em áudio de
+                    forma nativa e integrada.</p>
+
+                <div class="destaque-info" style="margin-top: 15px;">
+                    <h3>A importância da Narração por Voz</h3>
+                    <ul style="margin-left: 20px; margin-top: 8px;">
+                        <li><strong>Apoio a Deficiências Visuais Graves:</strong> Auxilia cegos ou pessoas com perda
+                            severa de visão a consumirem o conteúdo sem barreiras.</li>
+                        <li><strong>Inclusão Cognitiva e de Leitura:</strong> Ajuda utilizadores com dislexia ou
+                            dificuldades de leitura a acompanharem o texto por meio da audição simultânea.</li>
+                        <li><strong>Navegação Guiada:</strong> Ao mudar de seção, o narrador adapta-se automaticamente
+                            para ler a nova parte ativa da página.</li>
+                    </ul>
+                </div>
+
+                <div class="caixa-exemplo sucesso" style="margin-top: 20px;">
+                    <h3>Teste já na prática!</h3>
+                    <p>Clique no botão <strong>"Ativar Narrador"</strong> no topo da página e navegue pelas abas para
+                        ouvir a leitura automática dos conteúdos.</p>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- Lente da lupa -->
     <div id="lupa" class="lupa" aria-hidden="true"></div>
 
-    <!-- Ligação ao ficheiro JavaScript externo -->
+    <!-- Ligação ao arquivo JavaScript externo -->
     <script src="script.js" defer></script>
 </body>
 
