@@ -1,85 +1,73 @@
-# Videoaula 1 — Botões Acessíveis e Textos Alternativos
+# Roteiro da Videoaula 1 — Botões e Textos Alternativos
 
-## 1. Descrição da videoaula
+## 1. Objetivo
 
-Esta videoaula apresenta duas práticas importantes para a acessibilidade na web: o uso correto de botões HTML e a utilização de textos alternativos em imagens. Por meio de exemplos práticos do projeto Descomplica Web, o conteúdo demonstra como pequenas decisões no desenvolvimento podem facilitar a navegação de pessoas com deficiência e usuários de tecnologias assistivas.
+Apresentar a importância de utilizar elementos HTML acessíveis e textos alternativos nas imagens, mostrando como essas práticas ajudam pessoas com deficiência a navegar em páginas web.
 
-## 2. Objetivo
+## 2. Público-alvo
 
-Ensinar os conceitos básicos de botões acessíveis e textos alternativos, demonstrando sua importância na construção de páginas web mais inclusivas.
+Estudantes e pessoas iniciantes no desenvolvimento web que desejam aprender conceitos básicos de acessibilidade.
 
-## 3. Público-alvo
-
-Estudantes, iniciantes em desenvolvimento web e pessoas interessadas em aprender os fundamentos da acessibilidade digital.
-
-## 4. Duração estimada
+## 3. Duração estimada
 
 3 a 5 minutos.
 
-## 5. Recursos necessários
+## 4. Recursos necessários
 
-- Site Descomplica Web.
-- Navegador de internet.
-- Exemplos de código HTML presentes no projeto.
-- Ferramenta de gravação de tela e áudio.
-- Legendas sincronizadas com a narração na versão final do vídeo.
+- Computador com navegador web.
+- Página do projeto Descomplica Web.
+- Editor de código para demonstrar exemplos de HTML.
+- Legendas sincronizadas com a narração do vídeo.
 
-## 6. Roteiro de fala e demonstração
+## 5. Roteiro por cenas
 
-### Cena 1 — Apresentação (0:00–0:30)
-
-**Visual:** exibir a página inicial do Descomplica Web.
+### Cena 1 — Introdução
 
 **Narração:**
 
-Olá! Seja bem-vindo ao Descomplica Web. Nesta aula, vamos conhecer duas práticas importantes para tornar sites mais acessíveis: o uso correto de botões e a utilização de textos alternativos em imagens.
+Olá! Nesta videoaula, vamos aprender como botões e textos alternativos podem tornar um site mais acessível. A acessibilidade web permite que pessoas com diferentes necessidades consigam utilizar páginas da internet com mais autonomia.
 
-### Cena 2 — Botões acessíveis (0:30–1:45)
+**Visual:** Apresentação do site Descomplica Web e do tema da aula.
 
-**Visual:** abrir a seção de botões e código do projeto e apresentar os exemplos disponíveis.
-
-**Narração:**
-
-Os botões são elementos utilizados para executar ações em uma página, como enviar um formulário ou confirmar uma escolha.
-
-No HTML, podemos utilizar a tag `button`, que já possui comportamentos próprios e permite a interação pelo teclado. Por outro lado, uma `div` comum não possui automaticamente as mesmas características de um botão.
-
-Por isso, escolher os elementos HTML adequados ajuda a tornar a navegação mais previsível para pessoas que utilizam o teclado ou tecnologias assistivas.
-
-### Cena 3 — Textos alternativos (1:45–3:15)
-
-**Visual:** acessar a seção de textos alternativos e mostrar os exemplos de imagens.
+### Cena 2 — Botões acessíveis
 
 **Narração:**
 
-Agora vamos falar sobre os textos alternativos. O atributo `alt` permite fornecer uma descrição textual para uma imagem.
+No HTML, é importante escolher os elementos corretos para cada função. Por exemplo, quando queremos criar um botão para executar uma ação, devemos utilizar a tag `button`.
 
-Essa descrição pode ser interpretada por leitores de tela, ajudando pessoas com deficiência visual a compreender informações transmitidas visualmente.
+Um elemento criado apenas com uma `div` pode até parecer um botão, mas não oferece automaticamente os mesmos recursos de interação por teclado e de identificação para tecnologias assistivas.
 
-Por exemplo, se uma imagem mostra uma pessoa sorrindo em um parque, podemos escrever uma descrição objetiva que represente o conteúdo relevante da imagem.
+Por isso, utilizar os elementos HTML adequados ajuda a tornar a navegação mais simples e acessível.
 
-É importante lembrar que a descrição deve considerar o contexto. Imagens decorativas podem utilizar um atributo `alt` vazio, evitando que o leitor de tela anuncie informações desnecessárias.
+**Visual:** Mostrar os exemplos de botão do projeto, comparando a `div` utilizada como botão com o elemento `button`.
 
-### Cena 4 — Conclusão (3:15–3:45)
-
-**Visual:** retornar à página do projeto e destacar as duas práticas apresentadas.
+### Cena 3 — Textos alternativos nas imagens
 
 **Narração:**
 
-Nesta aula, aprendemos que utilizar elementos HTML adequados e fornecer descrições úteis para imagens são práticas que contribuem para a acessibilidade.
+Outro recurso importante é o atributo `alt`, utilizado para fornecer uma descrição textual de imagens informativas.
 
-Essas escolhas ajudam a reduzir barreiras e tornam o conteúdo mais compreensível para diferentes usuários.
+Essa descrição pode ser lida por leitores de tela, ajudando pessoas com deficiência visual a compreender o conteúdo da imagem.
 
-Continue explorando o Descomplica Web para conhecer outras formas de desenvolver páginas mais acessíveis!
+No nosso projeto, existe uma imagem com o atributo `alt` vazio. Nesse caso, leitores de tela normalmente ignoram a imagem, o que é apropriado quando ela é apenas decorativa. Já uma imagem que transmite uma informação importante deve ter uma descrição adequada.
 
-## 7. Acessibilidade do vídeo
+**Visual:** Mostrar no código os exemplos de imagens com `alt=""` e com uma descrição textual.
 
-- Incluir legendas sincronizadas com a narração.
+### Cena 4 — Conclusão
+
+**Narração:**
+
+Como vimos, utilizar elementos HTML adequados e descrever corretamente as imagens são medidas importantes para melhorar a acessibilidade. Pequenas escolhas no código podem fazer diferença na experiência de quem utiliza um site.
+
+**Visual:** Retornar à página inicial do Descomplica Web.
+
+## 6. Recursos de acessibilidade do vídeo
+
+- Inserir legendas sincronizadas com a narração.
 - Utilizar linguagem clara e objetiva.
-- Descrever verbalmente as informações importantes exibidas na tela.
-- Garantir que os textos apresentados durante a gravação tenham boa legibilidade.
+- Descrever verbalmente as informações importantes que aparecem na tela.
+- Garantir que o texto das legendas seja legível.
 
-## 8. Status
+## 7. Status
 
-**Status atual:** roteiro textual elaborado. A gravação, a edição e a revisão das legendas devem ser confirmadas pela equipe.
-
+Roteiro textual elaborado. A gravação, a edição e a inclusão das legendas devem ser realizadas ou confirmadas pela equipe.
