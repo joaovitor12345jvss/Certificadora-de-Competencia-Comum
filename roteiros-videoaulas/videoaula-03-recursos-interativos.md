@@ -1,90 +1,87 @@
-# Videoaula 3 — Recursos Interativos de Acessibilidade
+# Roteiro da Videoaula 3 — Recursos Interativos de Acessibilidade
 
-## 1. Descrição da videoaula
+## 1. Objetivo
 
-Esta videoaula apresenta recursos interativos de acessibilidade demonstrados no projeto Descomplica Web, como modo escuro, lupa de ampliação e narrador por voz. O objetivo é mostrar como essas ferramentas podem oferecer diferentes formas de visualizar e acompanhar o conteúdo de uma página.
+Apresentar os recursos interativos de acessibilidade disponíveis no projeto Descomplica Web, explicando suas funções e como eles podem auxiliar na utilização da página.
 
-## 2. Objetivo
+## 2. Público-alvo
 
-Demonstrar o funcionamento dos recursos interativos do projeto e explicar como eles podem contribuir para uma experiência de navegação mais acessível.
+Estudantes e pessoas iniciantes no desenvolvimento web que desejam conhecer recursos de acessibilidade implementados com HTML, CSS e JavaScript.
 
-## 3. Público-alvo
-
-Estudantes, iniciantes em desenvolvimento web e pessoas interessadas em acessibilidade digital.
-
-## 4. Duração estimada
+## 3. Duração estimada
 
 3 a 5 minutos.
 
-## 5. Recursos necessários
+## 4. Recursos necessários
 
-- Site Descomplica Web.
-- Navegador de internet.
-- Recursos interativos implementados no projeto.
-- Ferramenta de gravação de tela e áudio.
-- Legendas sincronizadas na versão final.
+- Computador com navegador web.
+- Página do projeto Descomplica Web.
+- Editor de código para demonstrar trechos de JavaScript e CSS.
+- Legendas sincronizadas com a narração.
 
-## 6. Roteiro de fala e demonstração
+## 5. Roteiro por cenas
 
-### Cena 1 — Introdução (0:00–0:30)
-
-**Visual:** abrir o site e apresentar os controles de acessibilidade disponíveis.
+### Cena 1 — Introdução
 
 **Narração:**
 
-Olá! Nesta aula do Descomplica Web, vamos conhecer alguns recursos interativos que podem ajudar a adaptar a experiência de navegação às necessidades dos usuários.
+Olá! Nesta videoaula, vamos conhecer três recursos interativos presentes no projeto Descomplica Web: o modo escuro, a lupa de ampliação e o narrador de texto.
 
-Vamos explorar o modo escuro, a lupa de ampliação e o narrador por voz.
+Esses recursos demonstram como JavaScript pode ser utilizado para oferecer diferentes formas de interação com uma página web.
 
-### Cena 2 — Modo escuro (0:30–1:30)
+**Visual:** Mostrar a página e destacar os três controles disponíveis.
 
-**Visual:** alternar entre o modo claro e o modo escuro, caso ambos estejam implementados no site.
-
-**Narração:**
-
-O modo escuro altera a aparência da página, utilizando cores mais escuras no fundo e ajustando as cores dos elementos.
-
-Para algumas pessoas, essa opção pode proporcionar maior conforto visual em determinadas condições de iluminação. Entretanto, as preferências variam, por isso é importante oferecer opções e manter a legibilidade do conteúdo.
-
-### Cena 3 — Lupa de ampliação (1:30–2:30)
-
-**Visual:** ativar a lupa disponível no projeto e demonstrar o efeito sobre o conteúdo.
+### Cena 2 — Modo escuro
 
 **Narração:**
 
-Agora vamos conhecer a lupa de ampliação. Esse recurso aumenta a visualização de determinados elementos e pode ajudar pessoas que têm dificuldade para enxergar textos ou detalhes pequenos.
+O modo escuro permite alterar as cores da interface, utilizando um fundo escuro e cores adequadas para o texto.
 
-Durante a demonstração, observe como a ampliação modifica a visualização. É importante que o conteúdo continue compreensível e que os controles permaneçam utilizáveis.
+No nosso projeto, podemos ativar essa opção pelo botão de alternância de tema. A preferência também é armazenada no navegador, permitindo que o site tente manter a escolha quando for acessado novamente.
 
-### Cena 4 — Narrador por voz (2:30–3:30)
+É importante lembrar que o modo escuro é uma opção de apresentação e não garante, por si só, que todas as combinações de cores sejam acessíveis.
 
-**Visual:** ativar o narrador do site e demonstrar a leitura de um trecho textual.
+**Visual:** Alternar entre o modo claro e o modo escuro e mostrar a mudança das cores.
 
-**Narração:**
-
-O narrador por voz utiliza recursos de síntese de fala para transformar textos em áudio.
-
-Isso oferece uma forma alternativa de acompanhar o conteúdo e pode beneficiar diferentes usuários. Porém, esse recurso não substitui completamente um leitor de tela, que possui funcionalidades próprias para navegar e interpretar páginas.
-
-### Cena 5 — Conclusão (3:30–4:00)
-
-**Visual:** retornar à página e mostrar os recursos apresentados.
+### Cena 3 — Lupa de ampliação
 
 **Narração:**
 
-Nesta aula, conhecemos três recursos que podem contribuir para uma navegação mais adaptável: modo escuro, ampliação e narração por voz.
+O projeto também possui uma lupa que amplia uma região da página. Esse recurso pode ajudar a observar determinados conteúdos com mais detalhes.
 
-Essas ferramentas são complementares. Uma página acessível também precisa de uma estrutura HTML adequada, boa legibilidade e navegação clara.
+Para utilizá-la, devemos ativar o controle correspondente e verificar como a ampliação acompanha o movimento do ponteiro.
 
-Obrigado por acompanhar o Descomplica Web!
+A lupa é um recurso complementar e não substitui outras ferramentas de ampliação ou os recursos de acessibilidade do próprio navegador.
 
-## 7. Acessibilidade do vídeo
+**Visual:** Ativar a lupa e demonstrar a ampliação de uma parte da página.
 
-- Incluir legendas sincronizadas com a narração.
-- Descrever verbalmente as mudanças apresentadas na tela.
+### Cena 4 — Narrador de texto
+
+**Narração:**
+
+Outro recurso implementado é o narrador de texto. Ele utiliza a funcionalidade de síntese de voz disponível no navegador para ler o conteúdo textual da seção ativa.
+
+O usuário pode ativar ou desativar esse recurso pelo botão correspondente.
+
+É importante destacar que esse narrador não substitui um leitor de tela completo, pois sua função é ler o texto da seção selecionada, e não oferecer todos os recursos de navegação e interpretação de uma tecnologia assistiva.
+
+**Visual:** Ativar o narrador, demonstrar a leitura de uma seção e, em seguida, desativá-lo.
+
+### Cena 5 — Conclusão
+
+**Narração:**
+
+Nesta aula, conhecemos três recursos interativos do Descomplica Web. Eles demonstram como a programação pode oferecer opções adicionais de interação, mas precisam ser testados para verificar seu funcionamento e sua compatibilidade com diferentes necessidades dos usuários.
+
+**Visual:** Mostrar novamente os três controles e finalizar a apresentação.
+
+## 6. Recursos de acessibilidade do vídeo
+
+- Inserir legendas sincronizadas.
+- Descrever verbalmente as ações realizadas na tela.
 - Utilizar linguagem clara e objetiva.
-- Garantir legibilidade dos textos durante a gravação.
+- Garantir que os controles e os textos demonstrados sejam apresentados de forma legível.
 
-## 8. Status
+## 7. Status
 
-**Status atual:** roteiro textual elaborado. A gravação, a edição e a revisão das legendas devem ser confirmadas pela equipe.
+Roteiro textual elaborado. A gravação, a edição, a inclusão das legendas e os testes dos recursos interativos devem ser realizados ou confirmados pela equipe.
