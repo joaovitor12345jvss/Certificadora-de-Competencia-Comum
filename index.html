@@ -22,9 +22,14 @@
                     🌙 Modo Escuro
                 </button>
                 <!-- Lupa de ampliação -->
-                <button id="btn-lupa" class="btn-tema" type="button" onclick="alternarLupa()"
-                    aria-pressed="false" aria-label="Ativar lupa de ampliação">
+                <button id="btn-lupa" class="btn-tema" type="button" onclick="alternarLupa()" aria-pressed="false"
+                    aria-label="Ativar lupa de ampliação">
                     🔍 Ativar Lupa
+                </button>
+                <!-- Botão do Narrador -->
+                <button id="btn-narrador" class="btn-tema" type="button" onclick="alternarNarrador()"
+                    aria-pressed="false">
+                    🔊 Ativar Narrador
                 </button>
             </div>
         </div>
@@ -96,7 +101,8 @@
             <div class="desafio">
                 <h2> Prática de Código: O Desafio do Texto Alternativo</h2>
                 <p>As imagens precisam de descrições em texto para utilizadores com deficiência visual. Sem o atributo
-                    <code>alt</code>, o leitor lê apenas o nome técnico do ficheiro.</p>
+                    <code>alt</code>, o leitor lê apenas o nome técnico do ficheiro.
+                </p>
 
                 <div class="comparacao-grid">
                     <div class="caixa-exemplo erro">
@@ -125,12 +131,14 @@
                 <p>O contraste garante legibilidade para utilizadores com baixa visão ou sob luz solar intensa.</p>
 
                 <div class="caixa-mau-contraste">
-                    <p><strong>❌ Mau Contraste:</strong> Texto cinzento claro num fundo de baixo contraste. Dificulta imensamente a
+                    <p><strong>❌ Mau Contraste:</strong> Texto cinzento claro num fundo de baixo contraste. Dificulta
+                        imensamente a
                         leitura.</p>
                 </div>
                 <br>
                 <div class="caixa-bom-contraste">
-                    <p><strong>✅ Bom Contraste:</strong> Texto escuro num fundo claro(ou claro num fundo escuro). Leitura confortável e validada.
+                    <p><strong>✅ Bom Contraste:</strong> Texto escuro num fundo claro(ou claro num fundo escuro).
+                        Leitura confortável e validada.
                     </p>
                 </div>
 

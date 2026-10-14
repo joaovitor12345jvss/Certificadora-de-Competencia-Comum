@@ -27,6 +27,12 @@ function mudarSeccao(idSeccao, evento) {
 
     // 5. Rola suavemente para o topo do conteúdo
     window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    // Se o narrador estiver ativo,
+    // começa a leitura da nova seção
+    if (narradorAtivo) {
+        narrarSecao();
+    }
 }
 
 // Função auxiliar para o botão principal de introdução
@@ -38,7 +44,7 @@ function mudarSeccaoParaBotao() {
 function alternarTema() {
     const body = document.body;
     const btnTema = document.getElementById('btn-tema');
-    
+
     if (body.getAttribute('data-tema') === 'escuro') {
         body.setAttribute('data-tema', 'claro');
         btnTema.textContent = '🌙 Modo Escuro';
@@ -54,7 +60,7 @@ function alternarTema() {
 window.addEventListener('DOMContentLoaded', () => {
     const temaGuardado = localStorage.getItem('tema');
     const btnTema = document.getElementById('btn-tema');
-    
+
     if (temaGuardado === 'escuro') {
         document.body.setAttribute('data-tema', 'escuro');
         if (btnTema) btnTema.textContent = '☀️ Modo Claro';
@@ -126,7 +132,7 @@ function alternarLupa() {
 document.addEventListener('pointermove', e => {
     if (lupaAtiva && e.pointerType !== 'touch') posicionarLupa(e.clientX, e.clientY);
 });
-window.addEventListener('scroll', () => { if (lupaAtiva) posicionarLupa(ultimoX, ultimoY); }, {passive: true});
+window.addEventListener('scroll', () => { if (lupaAtiva) posicionarLupa(ultimoX, ultimoY); }, { passive: true });
 window.addEventListener('resize', () => {
     if (lupaAtiva) { alternarLupa(); alternarLupa(); }
 });
@@ -135,3 +141,86 @@ new MutationObserver(() => sincronizarLupa()).observe(document.body, {
 });
 // Atualiza o conteúdo ampliado depois de trocar de seção.
 document.addEventListener('click', () => { if (lupaAtiva) requestAnimationFrame(sincronizarLupa); });
+
+
+/* ==========================================
+   NARRADOR DE TEXTO
+========================================== */
+
+// Guarda se o narrador está ativo ou não
+let narradorAtivo = false;
+
+// Recurso do navegador responsável pela fala
+const sintetizador = window.speechSynthesis;
+
+// Função responsável por ler a seção atual
+function narrarSecao() {
+
+    // Interrompe uma leitura anterior
+    sintetizador.cancel();
+
+    // Se o narrador estiver desligado, não faz nada
+    if (!narradorAtivo) {
+        return;
+    }
+
+    // Procura a seção que está visível
+    const secao = document.querySelector('.secao-spa.ativa');
+
+    // Se não encontrar a seção, encerra a função
+    if (!secao) {
+        return;
+    }
+
+    // Pega o texto da seção
+    const texto = secao.innerText;
+
+    // Cria uma fala com esse texto
+    const fala = new SpeechSynthesisUtterance(texto);
+
+    // Configura a voz
+    fala.lang = 'pt-BR';
+    fala.rate = 1;
+    fala.pitch = 1;
+    fala.volume = 1;
+
+    // Inicia a narração
+    sintetizador.speak(fala);
+}
+
+
+// Função responsável por ligar e desligar
+function alternarNarrador() {
+
+    // Procura o botão no HTML
+    const botao = document.getElementById('btn-narrador');
+
+    // Verifica se o navegador suporta narração
+    if (!('speechSynthesis' in window)) {
+        alert('Seu navegador não suporta narração de texto.');
+        return;
+    }
+
+    // Inverte o estado do narrador
+    narradorAtivo = !narradorAtivo;
+
+    // Atualiza a informação de acessibilidade
+    botao.setAttribute('aria-pressed', String(narradorAtivo));
+
+    if (narradorAtivo) {
+
+        // Altera o texto do botão
+        botao.textContent = '⏹️ Parar Narrador';
+
+        // Começa a leitura
+        narrarSecao();
+
+    } else {
+
+        // Volta ao texto original
+        botao.textContent = '🔊 Ativar Narrador';
+
+        // Para a leitura
+        sintetizador.cancel();
+    }
+}
