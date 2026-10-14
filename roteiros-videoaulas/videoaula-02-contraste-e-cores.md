@@ -1,82 +1,76 @@
-# Videoaula 2 — Contraste e Uso das Cores
+# Roteiro da Videoaula 2 — Contraste e Cores
 
-## 1. Descrição da videoaula
+## 1. Objetivo
 
-Esta videoaula apresenta a importância do contraste e do uso adequado das cores para a acessibilidade na web. A partir dos exemplos do Descomplica Web, o conteúdo demonstra como escolhas visuais podem facilitar ou dificultar a leitura e a compreensão das informações.
+Explicar como o contraste entre texto e fundo e o uso adequado das cores contribuem para a acessibilidade e a legibilidade de páginas web.
 
-## 2. Objetivo
+## 2. Público-alvo
 
-Explicar como o contraste entre texto e fundo e o uso de indicadores além das cores contribuem para tornar páginas web mais acessíveis.
+Estudantes e pessoas iniciantes no desenvolvimento web interessadas em criar páginas mais acessíveis.
 
-## 3. Público-alvo
-
-Estudantes, iniciantes em desenvolvimento web e pessoas interessadas em acessibilidade digital.
-
-## 4. Duração estimada
+## 3. Duração estimada
 
 3 a 5 minutos.
 
-## 5. Recursos necessários
+## 4. Recursos necessários
 
-- Site Descomplica Web.
-- Navegador de internet.
-- Exemplos de contraste e cores presentes no projeto.
-- Ferramenta de gravação de tela e áudio.
-- Legendas sincronizadas na versão final.
+- Computador com navegador web.
+- Página do projeto Descomplica Web.
+- Editor de código para demonstrar os estilos CSS.
+- Legendas sincronizadas com a narração.
 
-## 6. Roteiro de fala e demonstração
+## 5. Roteiro por cenas
 
-### Cena 1 — Introdução (0:00–0:30)
-
-**Visual:** abrir a página do projeto e acessar a seção de contraste e cores.
+### Cena 1 — Introdução
 
 **Narração:**
 
-Olá! Nesta aula do Descomplica Web, vamos aprender por que o contraste e o uso adequado das cores são importantes para a acessibilidade na web.
+Olá! Nesta videoaula, vamos falar sobre contraste e uso das cores em páginas web. Esses dois aspectos são importantes para que as informações sejam compreendidas por pessoas com diferentes necessidades visuais.
 
-### Cena 2 — Contraste entre texto e fundo (0:30–1:45)
+**Visual:** Mostrar a página do Descomplica Web e apresentar a seção sobre contraste e cores.
 
-**Visual:** mostrar os exemplos de contraste disponíveis no site.
-
-**Narração:**
-
-O contraste é a diferença visual entre elementos, como a cor do texto e a cor do fundo. Quando essa diferença é pequena, a leitura pode ficar mais difícil, especialmente para pessoas com baixa visão.
-
-Observe a diferença entre um texto com pouco contraste e outro com maior contraste. Uma escolha adequada de cores ajuda a tornar as informações mais legíveis.
-
-Por isso, ao desenvolver uma página, devemos considerar não apenas a aparência, mas também a facilidade de leitura.
-
-### Cena 3 — Não depender somente das cores (1:45–3:15)
-
-**Visual:** demonstrar, se disponível no projeto, exemplos de mensagens ou elementos identificados por cores.
+### Cena 2 — Contraste entre texto e fundo
 
 **Narração:**
 
-Outro cuidado importante é não transmitir informações utilizando somente cores.
+O contraste é a diferença visual entre o texto e a cor de fundo. Quando essa diferença é pequena, a leitura pode ficar mais difícil, principalmente para pessoas com baixa visão.
 
-Imagine um formulário que indica um erro apenas com uma borda vermelha. Algumas pessoas com daltonismo podem ter dificuldade para identificar essa diferença.
+No nosso projeto, podemos comparar um exemplo com contraste inadequado e outro em que o texto se destaca melhor do fundo.
 
-Uma solução é combinar a cor com uma mensagem textual, um ícone ou outro indicador claro. Assim, a informação pode ser compreendida por mais pessoas.
+Ao desenvolver um site, devemos escolher cores que facilitem a leitura e verificar se elas atendem aos critérios de acessibilidade recomendados.
 
-O objetivo é garantir que a comunicação não dependa exclusivamente da capacidade de distinguir determinadas cores.
+**Visual:** Demonstrar os exemplos de contraste inadequado e adequado disponíveis na página.
 
-### Cena 4 — Conclusão (3:15–3:45)
-
-**Visual:** retornar aos exemplos apresentados.
+### Cena 3 — Não depender apenas das cores
 
 **Narração:**
 
-Nesta aula, aprendemos que o contraste adequado facilita a leitura e que as cores não devem ser o único meio de transmitir informações.
+Outra prática importante é não utilizar somente as cores para transmitir informações.
 
-Esses cuidados contribuem para criar páginas mais legíveis, compreensíveis e inclusivas.
+Imagine um formulário que indica um erro apenas deixando uma mensagem em vermelho. Algumas pessoas podem não perceber essa diferença.
 
-## 7. Acessibilidade do vídeo
+Uma alternativa melhor é apresentar uma mensagem explícita, como “Erro”, acompanhada de um ícone ou de uma explicação. Assim, a informação não depende exclusivamente da percepção das cores.
 
-- Incluir legendas sincronizadas com a narração.
-- Utilizar linguagem clara e objetiva.
-- Descrever verbalmente as diferenças visuais apresentadas.
-- Garantir legibilidade dos textos exibidos na tela.
+**Visual:** Mostrar a comparação entre a mensagem que utiliza apenas a cor e a mensagem que combina texto e ícone.
 
+### Cena 4 — Conclusão
+
+**Narração:**
+
+Em resumo, escolher um bom contraste e não depender apenas das cores ajuda a tornar um site mais compreensível. Também é importante testar as combinações utilizadas para verificar se atendem aos critérios de acessibilidade.
+
+**Visual:** Retornar aos exemplos da página e destacar as boas práticas apresentadas.
+
+## 6. Recursos de acessibilidade do vídeo
+
+- Utilizar legendas sincronizadas.
+- Narrar as diferenças visuais mostradas na tela.
+- Não depender exclusivamente de cores para explicar os exemplos.
+- Utilizar textos legíveis e linguagem simples.
+
+## 7. Status
+
+Roteiro textual elaborado. A gravação, a edição, a inclusão das legendas e a verificação técnica do contraste devem ser realizadas ou confirmadas pela equipe.
 ## 8. Status
 
 **Status atual:** roteiro textual elaborado. A gravação, a edição e a revisão das legendas devem ser confirmadas pela equipe.
