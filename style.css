@@ -335,3 +335,28 @@ code {
     border: 0;
     border-top: 1px solid var(--borda-card);
 }
+/* Lupa circular que acompanha o ponteiro */
+.acoes-acessibilidade { display: flex; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
+.lupa {
+    display: none;
+    position: fixed;
+    width: 220px;
+    height: 220px;
+    border: 4px solid #3182ce;
+    border-radius: 50%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 9999;
+    background: var(--bg-body);
+    box-shadow: 0 6px 22px rgba(0,0,0,.35);
+}
+.lupa.ativa { display: block; }
+.lupa iframe {
+    position: absolute;
+    border: 0;
+    pointer-events: none;
+    transform-origin: 0 0;
+}
+@media (prefers-reduced-motion: reduce) {
+    .lupa { transition: none; }
+}

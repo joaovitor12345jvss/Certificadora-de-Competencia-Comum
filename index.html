@@ -15,11 +15,18 @@
     <header class="header-principal">
         <div class="header-topo-acoes">
             <span class="logo-texto">Descomplica Web 🌐</span>
-            <!-- Botão de Alternância de Tema -->
-            <button id="btn-tema" class="btn-tema" onclick="alternarTema()"
-                aria-label="Alternar entre modo claro e escuro">
-                🌙 Modo Escuro
-            </button>
+            <div class="acoes-acessibilidade">
+                <!-- Botão de Alternância de Tema -->
+                <button id="btn-tema" class="btn-tema" type="button" onclick="alternarTema()"
+                    aria-label="Alternar entre modo claro e escuro">
+                    🌙 Modo Escuro
+                </button>
+                <!-- Lupa de ampliação -->
+                <button id="btn-lupa" class="btn-tema" type="button" onclick="alternarLupa()"
+                    aria-pressed="false" aria-label="Ativar lupa de ampliação">
+                    🔍 Ativar Lupa
+                </button>
+            </div>
         </div>
         <div class="header-container">
             <h1>O Guia Interativo para uma Internet Inclusiva e Sem Barreiras</h1>
@@ -177,6 +184,9 @@
         </section>
 
     </main>
+
+    <!-- Lente da lupa -->
+    <div id="lupa" class="lupa" aria-hidden="true"></div>
 
     <!-- Ligação ao ficheiro JavaScript externo -->
     <script src="script.js" defer></script>
