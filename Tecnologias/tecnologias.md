@@ -10,6 +10,7 @@
 | **Controle de Versão** | **GitHub** | Repositório aberto para versionamento do código-fonte e documentação pública do projeto de extensão. |
 | **Hospedagem e Deploy** | **GitHub Pages** | Publicação da página inicial (landing page) e da aplicação web do REA de forma acessível e gratuita. |
 | **Gestão do Projeto** | **Trello** | Organização do trabalho em equipe através do método Kanban (Sprints, distribuição de tarefas e acompanhamento de prazos). |
+| **API** | **SpeechSynthesis** | Demonstração de recurso de apoio como narrador de texto para ser utilizado na página. |
 
 ---
 
